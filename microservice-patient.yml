@@ -9,7 +9,7 @@ spring:
         show-sql: false
         properties:
             hibernate:
-                dialect: org.hibernate.dialect.MySQL8Dialect
+                dialect: org.hibernate.dialect.MySQLDialect
     jackson:
         serialization:
             fail-on-empty-beans: false
@@ -22,4 +22,4 @@ springdoc:
     swagger-ui:
         path: /swagger-ui.html
 customizer:
-    maxPatients: 4
+    maxPatients: 2
