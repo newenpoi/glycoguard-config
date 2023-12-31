@@ -3,10 +3,6 @@ server:
 spring:
     application:
         name: microservice-eureka
-    cloud:
-        config:
-            import-check:
-                enabled: false
 eureka:
     client:
         registerWithEureka: false
