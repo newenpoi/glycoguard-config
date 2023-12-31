@@ -1,6 +1,8 @@
+server:
+    port: 9102
 spring:
     application:
-        name: microservice-gateway
+        name: microservice-eureka
     cloud:
         config:
             import-check:
@@ -10,4 +12,4 @@ eureka:
         registerWithEureka: false
         fetchRegistry: false
         serviceUrl:
-            defaultZone: http://eureka-server:8791/eureka/
+            defaultZone: http://localhost:9102/eureka/
