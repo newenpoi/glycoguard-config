@@ -1,0 +1,13 @@
+server:
+    port: 9102
+spring:
+    application:
+        name: microservice-gateway
+    cloud:
+        config:
+            import-check:
+                enabled: false
+eureka:
+    client:
+        registerWithEureka: false
+        fetchRegistry=: false
