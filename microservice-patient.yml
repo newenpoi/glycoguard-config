@@ -23,3 +23,7 @@ springdoc:
         path: /swagger-ui.html
 customizer:
     maxPatients: 2
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8083/eureka/
