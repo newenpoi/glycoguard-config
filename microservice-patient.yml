@@ -1,29 +1,29 @@
 spring:
-    datasource:
-        url: jdbc:mysql://localhost:3306/glycoguard
-        username: root
-        password: .Logme1nn
+  datasource:
+    url: jdbc:mysql://localhost:3306/glycoguard
+      username: root
+      password: .Logme1nn
     jpa:
-        hibernate.ddl-auto: update
-        generate-ddl: false
-        show-sql: false
-        properties:
-            hibernate:
-                dialect: org.hibernate.dialect.MySQLDialect
-    jackson:
-        serialization:
-            fail-on-empty-beans: false
-    mvc:
-        pathmatch:
-            matching-strategy: ant_path_matcher
+      hibernate.ddl-auto: update
+      generate-ddl: false
+      show-sql: false
+      properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 springdoc:
-    api-docs:
-        path: /v3/api-docs
-    swagger-ui:
-        path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
 customizer:
-    maxPatients: 2
+  maxPatients: 2
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://localhost:8083/eureka/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/

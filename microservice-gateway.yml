@@ -1,0 +1,18 @@
+server:
+  port: 9004
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: patients-service
+          uri: lb://patients-service
+          predicates:
+            - Path=/patients/**
+        - id: notes-service
+          uri: lb://notes-service
+          predicates:
+            - Path=/notes/**
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka/
