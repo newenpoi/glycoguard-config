@@ -8,10 +8,6 @@ spring:
           uri: lb://patients-service
           predicates:
             - Path=/patients/**
-        - id: notes-service
-          uri: lb://notes-service
-          predicates:
-            - Path=/notes/**
 eureka:
   client:
     registerWithEureka: true
