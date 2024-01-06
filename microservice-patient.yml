@@ -17,7 +17,7 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
 server:
-  port: 
+  port: 9111
 springdoc:
   api-docs:
     path: /v3/api-docs

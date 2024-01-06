@@ -1,3 +1,8 @@
 spring:
   thymeleaf:
     cache: false
+server:
+  port: 9113
+logging:
+    level:
+      org.springframework.security: DEBUG
