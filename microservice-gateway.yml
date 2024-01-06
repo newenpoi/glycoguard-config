@@ -1,16 +1,17 @@
-server:
-  port: 9004
 spring:
-  cloud:
-    gateway:
+   cloud:
+      gateway:
+      discovery:
+         locator:
+            enabled: true
       routes:
-        - id: patients-service
-          uri: lb://patients-service
-          predicates:
+          - id: patients
+            uri: lb://patients-service
+            predicates:
             - Path=/patients/**
+server:
+   port: 9009
 eureka:
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8083/eureka/
+   client:
+      serviceURL:
+         defaultZone: http://localhost:8083/eureka
