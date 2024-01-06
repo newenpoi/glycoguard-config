@@ -1,17 +1,17 @@
 spring:
-   cloud:
-      gateway:
-      discovery:
-         locator:
-            enabled: true
-      routes:
-          - id: patients
-            uri: lb://patients-service
-            predicates:
-            - Path=/patients/**
+  cloud:
+    gateway:
+    discovery:
+      locator:
+        enabled: true
+    routes:
+      - id: patients
+        uri: lb://patients-service
+        predicates:
+        - Path=/patients/**
 server:
-   port: 9009
+  port: 9103
 eureka:
-   client:
-      serviceURL:
-         defaultZone: http://localhost:8083/eureka
+  client:
+    serviceURL:
+      defaultZone: http://localhost:8083/eureka

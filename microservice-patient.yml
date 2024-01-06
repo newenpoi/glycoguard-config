@@ -16,14 +16,24 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+server:
+  port: 
 springdoc:
   api-docs:
     path: /v3/api-docs
   swagger-ui:
     path: /swagger-ui.html
-customizer:
-  maxPatients: 2
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8083/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+logging:
+  level:
+    org.springframework.security: DEBUG
+customizer:
+  maxPatients: 2
