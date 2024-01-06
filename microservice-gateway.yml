@@ -9,10 +9,6 @@ spring:
         uri: lb://patients-service
         predicates:
         - Path=/patients/**
-  security:
-    user:
-      name: newenpoi
-      password: azerty
 server:
   port: 9103
 eureka:
