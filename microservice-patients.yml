@@ -36,4 +36,4 @@ logging:
   level:
     org.springframework.security: DEBUG
 customizer:
-  maxPatients: 2
+  maxPatients: 4
